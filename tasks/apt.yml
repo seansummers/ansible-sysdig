@@ -12,3 +12,6 @@
     dest: /etc/apt/sources.list.d/
     url: '{{ sysdig_repo_url }}'
 
+- name: sysdig | update repo cache
+  apt:
+    update_cache: yes
