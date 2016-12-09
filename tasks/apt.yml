@@ -1,0 +1,14 @@
+---
+- name: sysdig | setup apt
+  include_vars: apt.yml
+
+- name: sysdig | install package key
+  apt_key:
+    url: '{{ sysdig_key_url }}'
+    state: present
+
+- name: sysdig | install repo
+  get_url:
+    dest: /etc/apt/sources.list.d/
+    url: '{{ sysdig_repo_url }}'
+
