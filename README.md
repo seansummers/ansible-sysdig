@@ -1,5 +1,5 @@
-osquery
-=======
+sysdig
+======
 
 Install [sysdig](http://www.sysdig.org/)
 
@@ -21,7 +21,7 @@ None
 Example Playbook
 ----------------
 
-Install osquery
+Install sysdig
 ```yaml
 - hosts: all
   roles:
